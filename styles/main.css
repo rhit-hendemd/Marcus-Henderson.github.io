@@ -8,13 +8,19 @@ body {
     left: 0px;
 }
 
-a {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
 }
 
 .navbar {
     position: fixed;
-    background-image: linear-gradient(283deg, rgba(32, 220, 233, 0.793), rgba(39, 21, 236, 0.8));
+    /* background-image: linear-gradient(283deg, rgba(32, 220, 233, 0.793), rgba(39, 21, 236, 0.8)); */
+    background-image: linear-gradient(283deg, rgba(32, 220, 233, 1), rgba(39, 21, 236, 1));
     padding: 10px 0px;
     height: 70px;
     min-height: max-content;
@@ -94,12 +100,8 @@ nav .myName {
     font-size: 2.8em;
 }
 
-.pageContainer {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+#welcomePage {
     background-image: url("../images/animePretty.jpg");
-    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,16 +113,15 @@ nav .myName {
     font-family: 'Pattaya', sans-serif;
     color: white;
     font-size: 5em;
-    margin-top: 40vh;
+    top: 10vh;
     text-shadow: rgb(87, 0, 226);
-    /* margin-top: 70vh; */
 }
 
 
 
 .moveButton {
     position: relative;
-    margin: 0 auto;
+    top:15vh;
     background: rgba(32, 220, 233, 1);
     color: white;
     width: 270px;
@@ -149,21 +150,64 @@ nav .myName {
     position: relative;
     max-width: 100%;
     height: 100vh;
+    background-size: 100% 100%;
     background-position: center;
-}
-
-.aboutMe {
-    position: relative;
-    max-width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-image: linear-gradient(to top, rgba(77, 101, 197, 0.5), rgba(0, 30, 255, 0.393)), url("../images/divide.jpg");
     display: flex;
     justify-content: center;
 }
 
-.marcus {
+/*About Stuff*/
+.aboutMe {
+    /* min-height: 100vh; */
+    background-image: url("../images/divide.jpg");
+    box-shadow: 0 0 3px rgba(39, 21, 236, 0.8);
+    justify-content: left;
+}
+
+.aboutDialogue {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.aboutSection {
+    width: 600px;
+    height: 400px;
+    background-color: #2721ec;
+    color: azure;
+    border-radius: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    box-shadow: inset 0 0 15px 5px #4ba2ff;
+}
+
+.aboutText {
+    width: 90%;
+    height: 74%;
+    background-color: rgb(48, 48, 48);
     margin-top: 10px;
+    align-self: center;
+}
+
+#carouselExampleControls, .carousel-inner, .carousel-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: blue;
+}
+
+.marcus {
+    position: relative;
     border-radius: 50%;
     max-width: 375px;
     box-shadow: 0 0 10px 4px rgb(13 93 233 / 80%);
@@ -177,7 +221,47 @@ nav .myName {
 
 }
 
+/*About Stuff End*/
+
+/*Portfolio Stuff*/
+
 .portfolio {
     background-image: url("../images/sceneBrowsing.jpg");
-   
+    align-content: space-around;
+    justify-content: space-around;
+    padding-top: 77px;
 }
+
+.portfolioCircle {
+    background-color: azure;
+    border-radius: 50%;
+    width:400px;
+    height: 400px;
+    text-align: center;
+    line-height: 50%;
+    color: black;
+}
+
+.portfolioCircle .material-icons {
+    font-size: 300px;
+    line-height: 1.3em;
+}
+
+.portfolioCircle:hover {
+    transition: ease-in 0.4s;
+    color: rgba(0, 162, 255, 0.786);
+    background: rgb(255, 255, 255);
+}
+
+/*End Portfolio*/
+
+/*Resume*/
+
+.resume {
+    background-image: url("../images/blueGalaxy.jpg");
+}
+
+/*End Resume*/
+
+
+
