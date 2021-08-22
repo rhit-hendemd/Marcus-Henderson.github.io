@@ -142,7 +142,7 @@ nav .myName {
 
 .moveButton:hover {
     transition: ease 0.5s;
-    background: white;
+    background: rgb(150, 0, 250);
     text-shadow: rgb(87, 0, 226);
 }
 
@@ -191,9 +191,17 @@ nav .myName {
 .aboutText {
     width: 90%;
     height: 74%;
-    background-color: rgb(48, 48, 48);
+    border-radius: 12%;
+    background-color: rgb(0 166 255 / 93%);
     margin-top: 10px;
     align-self: center;
+    padding: 15px;
+    font-family: 'Domine', serif;
+    font-size: 1.5em;
+}
+
+.aboutSection > h2,h1 {
+    font-family: 'Pattaya', sans-serif;
 }
 
 #carouselExampleControls, .carousel-inner, .carousel-item {
@@ -204,6 +212,14 @@ nav .myName {
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     color: blue;
+}
+
+.carousel-control-next {
+    right: -40px;
+}
+
+.carousel-control-prev {
+    left: -40px;
 }
 
 .marcus {
@@ -226,7 +242,7 @@ nav .myName {
 /*Portfolio Stuff*/
 
 .portfolio {
-    background-image: url("../images/sceneBrowsing.jpg");
+    background-image: url("../images/yourLieBg.jpg");
     align-content: space-around;
     justify-content: space-around;
     padding-top: 77px;
@@ -249,8 +265,8 @@ nav .myName {
 
 .portfolioCircle:hover {
     transition: ease-in 0.4s;
-    color: rgba(0, 162, 255, 0.786);
-    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: rgb(0, 217, 255);
 }
 
 /*End Portfolio*/
@@ -258,8 +274,60 @@ nav .myName {
 /*Resume*/
 
 .resume {
-    background-image: url("../images/blueGalaxy.jpg");
+    background-image: url("../images/69.jpg");
+    padding-top: 77px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+.resume > h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 6em;
+}
+
+.columnResume {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media screen {
+    
+}
+
+.columnResume h3,h4 {
+    font-family: 'Domine', serif;
+}
+
+.columnResume h2,h3,h4 {
+    font-size: 2.5em;
+}
+
+.resumeList {
+    font-family: 'Domine', serif;
+}
+
+.resumeSection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    font-family: 'Domine', serif;
+    font-size: 1.2em;
+}
+
+
+
+
 
 /*End Resume*/
 
